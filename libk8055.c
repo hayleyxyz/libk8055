@@ -159,7 +159,7 @@ static int ReadK8055Data(void)
     for(i=0; i < 3; i++)
         {
         read_status = usb_interrupt_read(CurrDev->device_handle, USB_INP_EP, (char *)CurrDev->data_in, PACKET_LEN, USB_TIMEOUT);
-        if ((read_status == PACKET_LEN) && (CurrDev->data_in[1] == CurrDev->DevNo )) return 0;
+        if ((read_status == PACKET_LEN) && (CurrDev->data_in[1] == CurrDev->DevNo + 10)) return 0;
         if (DEBUG)
             fprintf(stderr, "Read retry\n");
         }
