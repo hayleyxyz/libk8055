@@ -97,7 +97,6 @@
 #define USB_INP_EP 0x81 /* USB Input endpoint */
 
 #define USB_TIMEOUT 20
-#define K8055_ERROR -1
 
 #define DIGITAL_INP_OFFSET 0
 #define DIGITAL_OUT_OFFSET 1

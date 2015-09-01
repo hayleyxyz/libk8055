@@ -19,6 +19,8 @@
 
    http://opensource.org/licenses/
 */
+#define K8055_ERROR -1
+
 #ifdef __cplusplus
 extern "C" {
 #endif
